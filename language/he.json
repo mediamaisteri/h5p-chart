@@ -1,39 +1,40 @@
 {
-  "semantics":[
+  "semantics": [
     {
-      "label":"Type of chart",
-      "options":[
+      "label": "סוג גרף",
+      "options": [
         {
-          "label":"Pie Chart"
+          "label": "גרף עוגה"
         },
         {
-          "label":"Bar Chart"
+          "label": "גרף עמודות"
         }
-      ],
-      "default":"pieChart"
+      ]
     },
     {
-      "label":"Data elements",
-      "entity":"option",
-      "field":{
-        "label":"Data element",
-        "fields":[
+      "label": "נתוני הגרף",
+      "entity": "אפשרות",
+      "field": {
+        "label": "רכיב מידע",
+        "fields": [
           {
-            "label":"Name"
+            "label": "שם"
           },
           {
-            "label":"Value"
+            "label": "ערך"
           },
           {
-            "label":"Color",
-            "default":"#000"
+            "label": "צבע רקע"
           },
           {
-            "label":"Font Color",
-            "default":"#fff"
+            "label": "צבע הגופן"
           }
         ]
       }
+    },
+    {
+      "label": "תאור המוקרא על ידי קורא־מסך יקריא את הרכיב כגרף.",
+      "default": "גרף"
     }
   ]
 }

@@ -9,8 +9,7 @@
         {
           "label":"Søylediagram"
         }
-      ],
-      "default":"pieChart"
+      ]
     },
     {
       "label":"Verdier",
@@ -25,15 +24,17 @@
             "label":"Verdi"
           },
           {
-            "label":"Bakgrunnsfarge",
-            "default":"#000"
+            "label":"Bakgrunnsfarge"
           },
           {
-            "label":"Tekstfarge",
-            "default":"#fff"
+            "label":"Tekstfarge"
           }
         ]
       }
+    },
+    {
+      "label": "Text read by readspeakers defining the figure as a chart.",
+      "default": "Chart"
     }
   ]
 }

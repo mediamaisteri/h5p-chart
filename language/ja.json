@@ -9,8 +9,7 @@
         {
           "label":"棒グラフ"
         }
-      ],
-      "default":"pieChart"
+      ]
     },
     {
       "label":"データ要素",
@@ -25,15 +24,17 @@
             "label":"値"
           },
           {
-            "label":"色",
-            "default":"#000"
+            "label":"色"
           },
           {
-            "label":"フォントの色",
-            "default":"#fff"
+            "label":"フォントの色"
           }
         ]
       }
+    },
+    {
+      "label": "Text read by readspeakers defining the figure as a chart.",
+      "default": "Chart"
     }
   ]
 }

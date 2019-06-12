@@ -1,39 +1,40 @@
 {
-  "semantics":[
+  "semantics": [
     {
-      "label":"Type of chart",
-      "options":[
+      "label": "Soort grafiek",
+      "options": [
         {
-          "label":"Pie Chart"
+          "label": "Cirkeldiagram"
         },
         {
-          "label":"Bar Chart"
+          "label": "Staafdiagram"
         }
-      ],
-      "default":"pieChart"
+      ]
     },
     {
-      "label":"Data elements",
-      "entity":"option",
-      "field":{
-        "label":"Data element",
-        "fields":[
+      "label": "Gegevenselementen",
+      "entity": "optie",
+      "field": {
+        "label": "Gegevenselement",
+        "fields": [
           {
-            "label":"Name"
+            "label": "Naam"
           },
           {
-            "label":"Value"
+            "label": "Waarde"
           },
           {
-            "label":"Color",
-            "default":"#000"
+            "label": "Kleur"
           },
           {
-            "label":"Font Color",
-            "default":"#fff"
+            "label": "KLeur lettertype"
           }
         ]
       }
+    },
+    {
+      "label": "Tekst gelezen door readsprekers die het figuur als een grafiek definiëren.",
+      "default": "Grafiek"
     }
   ]
 }

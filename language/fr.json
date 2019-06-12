@@ -1,39 +1,40 @@
 {
-  "semantics":[
+  "semantics": [
     {
-      "label":"Type of chart",
-      "options":[
+      "label": "Type de graphique",
+      "options": [
         {
-          "label":"Pie Chart"
+          "label": "Camembert"
         },
         {
-          "label":"Bar Chart"
+          "label": "Graphique en barres"
         }
-      ],
-      "default":"pieChart"
+      ]
     },
     {
-      "label":"Data elements",
-      "entity":"option",
-      "field":{
-        "label":"Data element",
-        "fields":[
+      "label": "Données",
+      "entity": "option",
+      "field": {
+        "label": "Données",
+        "fields": [
           {
-            "label":"Name"
+            "label": "Nom"
           },
           {
-            "label":"Value"
+            "label": "Valeur"
           },
           {
-            "label":"Color",
-            "default":"#000"
+            "label": "Couleur"
           },
           {
-            "label":"Font Color",
-            "default":"#fff"
+            "label": "Couleur de la police"
           }
         ]
       }
+    },
+    {
+      "label": "Texte lu par l'orateur (readspeaker) et qui définit la figure comme étant un graphique.",
+      "default": "Graphique"
     }
   ]
 }

@@ -3,11 +3,15 @@
   "description": "Create different charts",
   "majorVersion": 1,
   "minorVersion": 2,
-  "patchVersion": 3,
+  "patchVersion": 12,
   "runnable": 1,
   "author": "Joubel",
   "license": "MIT",
   "machineName": "H5P.Chart",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 21
+  },
   "embedTypes": [
     "iframe"
   ],

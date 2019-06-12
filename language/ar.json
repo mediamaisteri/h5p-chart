@@ -1,39 +1,40 @@
 {
-  "semantics":[
+  "semantics": [
     {
-      "label":"Type of chart",
-      "options":[
+      "label": "نوع المخطط",
+      "options": [
         {
-          "label":"Pie Chart"
+          "label": "مخطط دائري"
         },
         {
-          "label":"Bar Chart"
+          "label": "مخطط شريطي"
         }
-      ],
-      "default":"pieChart"
+      ]
     },
     {
-      "label":"Data elements",
-      "entity":"option",
-      "field":{
-        "label":"Data element",
-        "fields":[
+      "label": "عناصر البيانات",
+      "entity": "option",
+      "field": {
+        "label": "عنصر البيانات",
+        "fields": [
           {
-            "label":"Name"
+            "label": "اسم"
           },
           {
-            "label":"Value"
+            "label": "قيمة"
           },
           {
-            "label":"Color",
-            "default":"#000"
+            "label": "لون"
           },
           {
-            "label":"Font Color",
-            "default":"#fff"
+            "label": "لون الخط"
           }
         ]
       }
+    },
+    {
+      "label": "قراءة النص بواسطة آلية تحويل النص الى كلام وذلك بتعريف الشكل كمخطط.",
+      "default": "Chart"
     }
   ]
 }

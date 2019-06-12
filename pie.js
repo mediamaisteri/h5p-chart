@@ -1,14 +1,16 @@
+/*global d3*/
 H5P.Chart.PieChart = (function () {
 
   /**
    * Creates a pie chart from the given data set.
    *
    * @class
-   * @param {array} dataSet
+   * @param {array} params from semantics, contains data set
    * @param {H5P.jQuery} $wrapper
    */
-  function PieChart(dataSet, $wrapper) {
+  function PieChart(params, $wrapper) {
     var self = this;
+    var dataSet = params.listOfTypes;
 
     var defColors = d3.scale.ordinal()
       .range(["#90EE90", "#ADD8E6", "#FFB6C1", "#B0C4DE", "#D3D3D3", "#20B2AA", "#FAFAD2"]);
@@ -17,13 +19,16 @@ H5P.Chart.PieChart = (function () {
     var svg = d3.select($wrapper[0])
       .append("svg");
 
+    svg.append("desc").html(params.figureDefinition);
+
     var translater = svg.append("g")
       .attr("class", "translater");
 
     var pie = d3.layout.pie()
       .sort(null)
       .value(function(d) {
-        return d.value; });
+        return d.value;
+      });
 
     var arcs = translater.selectAll(".arc")
       .data(pie(dataSet))
@@ -40,8 +45,11 @@ H5P.Chart.PieChart = (function () {
 
     var texts = arcs.append("svg:text")
       .attr("class", "text")
+      .attr("aria-hidden", true)
       .attr("text-anchor", "middle")
-      .text(function(d, i) { return dataSet[i].value + ': ' + dataSet[i].text; })
+      .text(function(d, i) {
+        return dataSet[i].text + ': ' + dataSet[i].value;
+      })
       .attr("fill", function (d) {
         if (d.data.fontColor !== undefined) {
           return d.data.fontColor;
@@ -71,10 +79,10 @@ H5P.Chart.PieChart = (function () {
       translater.attr("transform", "translate(" + (width / 2) + "," + (height / 2) + ")");
       paths.attr("d", arc);
       texts.attr("transform", function(d) {
-          d.innerRadius = 0;
-          d.outerRadius = radius - padding;
-          return "translate(" + arc.centroid(d) + ")";
-        });
+        d.innerRadius = 0;
+        d.outerRadius = radius - padding;
+        return "translate(" + arc.centroid(d) + ")";
+      });
     };
   }
 

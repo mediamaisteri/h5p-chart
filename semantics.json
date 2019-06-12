@@ -42,7 +42,8 @@
           "label": "Value",
           "importance": "low",
           "default": 1,
-          "min": 1
+          "min": 0.0001,
+          "decimals": 4
         },
         {
           "name": "color",
@@ -51,7 +52,11 @@
           "label": "Color",
           "importance": "low",
           "default": "#000",
-          "optional": true
+          "optional": true,
+          "spectrum": {
+            "showInput": true,
+            "preferredFormat": "hex"
+          }
         },
         {
           "name": "fontColor",
@@ -60,9 +65,21 @@
           "label": "Font Color",
           "importance": "low",
           "default": "#fff",
-          "optional": true
+          "optional": true,
+          "spectrum": {
+            "showInput": true,
+            "preferredFormat": "hex"
+          }
         }
       ]
     }
+  },
+  {
+    "name": "figureDefinition",
+    "type": "text",
+    "label": "Text read by readspeakers defining the figure as a chart.",
+    "importance": "low",
+    "default": "Chart",
+    "common": true
   }
 ]

@@ -1,39 +1,40 @@
 {
-  "semantics":[
+  "semantics": [
     {
-      "label":"Type of chart",
-      "options":[
+      "label": "Arvjoonise tüüp",
+      "options": [
         {
-          "label":"Pie Chart"
+          "label": "Sektorjoonis"
         },
         {
-          "label":"Bar Chart"
+          "label": "Tulpjoonis"
         }
-      ],
-      "default":"pieChart"
+      ]
     },
     {
-      "label":"Data elements",
-      "entity":"option",
-      "field":{
-        "label":"Data element",
-        "fields":[
+      "label": "Andmeelemendid",
+      "entity": "valik",
+      "field": {
+        "label": "Andmeelement",
+        "fields": [
           {
-            "label":"Name"
+            "label": "Nimi"
           },
           {
-            "label":"Value"
+            "label": "Väärtus"
           },
           {
-            "label":"Color",
-            "default":"#000"
+            "label": "Värv"
           },
           {
-            "label":"Font Color",
-            "default":"#fff"
+            "label": "Fondi värv"
           }
         ]
       }
+    },
+    {
+      "label": "Tekstilugeri loetud tekst, mis määratleb pildi arvjoonisena.",
+      "default": "Arvjoonis"
     }
   ]
 }
